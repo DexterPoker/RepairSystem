@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<package name="cn.edu.zucc.repair.action" extends= "struts-default">
+	<action name="adduser" class= "cn.edu.zucc.repair.action.AdduserAction">
+		<result name="success">/usermanager.jsp</result>
+		<result name="fail">/usermanager.jsp</result>
+	</action>
+	<action name="usergrid" class="cn.edu.zucc.repair.action.UsergridAction"></action>
+	<action name="usermotify" class="cn.edu.zucc.repair.action.MotifyuserAction"></action>
+	<action name="userdelete" class="cn.edu.zucc.repair.action.DeleteuserAction"></action>
+	<action name="assetsgrid" class="cn.edu.zucc.repair.action.AssetsgridAction"></action>
+	<action name="ordergrid" class="cn.edu.zucc.repair.action.OrdergridAction"></action>
+	<action name="Login" class="cn.edu.zucc.repair.action.LoginAction">
+		<result name="normal">/normal.jsp</result>
+	</action>
+	<action name="addorder" class="cn.edu.zucc.repair.action.AddorderAction"></action>
+	<action name="motifyorder" class="cn.edu.zucc.repair.action.MotifyorderAction"></action>
+</package>
+</struts>

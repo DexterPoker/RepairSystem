@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.edu.zucc.repair.model.AssetsBean" table="assets" schema="" catalog="mydb">
+        <id name="id" column="id"/>
+        <property name="name" column="name"/>
+        <property name="description" column="description"/>
+        <property name="location" column="location"/>
+        <property name="status" column="status"/>
+        <property name="type" column="type"/>
+    </class>
+    <class name="cn.edu.zucc.repair.model.RepairorderBean" table="repairorder" schema="" catalog="mydb">
+        <id name="id" column="id"/>
+        <property name="startDate" column="start_date"/>
+        <property name="endDate" column="end_date"/>
+        <property name="level" column="level"/>
+        <property name="description" column="description"/>
+        <property name="status" column="status"/>
+        <property name="address" column="address"/>
+        <property name="proposerId" column="proposer_id"/>
+        <property name="maintainerId" column="maintainer_id"/>
+        <property name="assetsId" column="assets_id"/>
+    </class>
+    <class name="cn.edu.zucc.repair.model.UsersBean" table="users" schema="" catalog="mydb">
+        <id name="userId" column="user_id"/>
+        <property name="userName" column="user_name"/>
+        <property name="password" column="password"/>
+        <property name="level" column="level"/>
+        <property name="status" column="status"/>
+    </class>
+</hibernate-mapping>
